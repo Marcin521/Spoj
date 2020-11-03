@@ -9,7 +9,22 @@ int f(int n)
 
 int main()
 {
-    cout << "wynik " << f(0) << endl;
+    int tab[10];
+    int number;
+
+    //give number
+
+    for(int i=0; i<10; i++)
+    {
+        cin >> number;
+        number=tab[i];
+    }
+
+    for(int i=0; i<10; i++)
+    {
+        cout << f(i) << endl;
+    }
+
 
     return 0;
 }
