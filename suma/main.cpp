@@ -10,19 +10,19 @@ int f(int n)
 int main()
 {
     int tab[10];
-    int number;
+    int number=0;
 
     //give number
 
     for(int i=0; i<10; i++)
     {
         cin >> number;
-        number=tab[i];
+        tab[i]=number;
     }
 
     for(int i=0; i<10; i++)
     {
-        cout << f(i) << endl;
+        cout << f(tab[i]) << endl;
     }
 
 
