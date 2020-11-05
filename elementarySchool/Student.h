@@ -20,13 +20,6 @@ class Student {
     string getSurname();
     float getAverage();
 
-
-    void setName(const string &name);
-
-    void setSurname(const string &surname);
-
-    void setAverage(float average);
-
     Student(string, string, float);
     ~Student();
 

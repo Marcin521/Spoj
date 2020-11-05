@@ -10,21 +10,21 @@ Student::Student(string n, string s, float a)
     average=a;
 }
 
-Student::getName()
+string Student::getName()
 {
     return name;
 }
 
-Student::getSurname()
+string Student::getSurname()
 {
     return surname;
 }
 
-Student::getAverage()
+float Student::getAverage()
 {
     return average;
 }
 
 
 
-Student::~Student();
+Student::~Student(){}
