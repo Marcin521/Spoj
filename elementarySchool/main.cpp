@@ -4,10 +4,26 @@
 
 using namespace std;
 
+float avg(float *arr, int n)
+{
+    float sum=0;
+
+    for(int i =0; i<n; i++)
+    {
+        sum+=arr[i];
+    }
+
+    return sum/n;
+
+}
+
 int main() {
 
     int n;
+
     cin >> n;
+
+    float arrAvg[n];
 
     vector<Student> arr;
 
@@ -21,10 +37,10 @@ int main() {
 
 
         arr.push_back(Student (a, b, c));
-        cout << arr.back().getName() << endl;
-
-
+        arrAvg[n-1] = c;
     }
+
+    cout << avg(arrAvg, sizeof(arrAvg)/sizeof(arrAvg[0]));
 
     return 0;
 }
